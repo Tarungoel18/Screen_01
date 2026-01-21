@@ -18,8 +18,13 @@
     <div class="modal">
       <!-- Title -->
       <div class="title">
+        <a class="caret-parent">
+          <i class="fa-solid fa-angle-left close-caret"></i>
+        </a>
         <h4>Pick a Delivery Location</h4>
-        <i class="fa-solid fa-xmark close-icon text-light"></i>
+        <a class="close-icon-parent">
+          <i class="fa-solid fa-xmark close-icon text-light"></i>
+        </a>
       </div>
 
       <!-- Search Box -->
@@ -28,7 +33,12 @@
           <img src="/assets/images/search-icon.png" />
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Search for delivery location" />
+          <input
+            type="text"
+            class="city-search"
+            placeholder="Search for delivery location"
+          />
+          <div class="city-suggestions"></div>
         </div>
       </div>
 
@@ -68,8 +78,8 @@
         </div>
         <div class="cities-wrapper">
           <div class="city">
-            <div>
-              <img src="/assets/images/cities_icon_1.png" tabindex="1" />
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_1.png" />
             </div>
             <div>
               <p>Mumbai</p>
@@ -77,57 +87,75 @@
           </div>
 
           <div class="city">
-            <div><img src="/assets/images/cities_icon_2.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_2.png" />
+            </div>
             <div>
               <p>Delhi</p>
             </div>
           </div>
           <div class="city">
-            <div><img src="/assets/images/cities_icon_3.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_3.png" />
+            </div>
             <div>
               <p>Gurgaon</p>
             </div>
           </div>
           <div class="city">
-            <div><img src="/assets/images/cities_icon_4.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_4.png" />
+            </div>
             <div>
               <p>Bangalore</p>
             </div>
           </div>
 
           <div class="city">
-            <div><img src="/assets/images/cities_icon_5.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_5.png" />
+            </div>
             <div>
               <p>Kolkata</p>
             </div>
           </div>
           <div class="city">
-            <div><img src="/assets/images/cities_icon_6.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_6.png" />
+            </div>
             <div>
               <p>Pune</p>
             </div>
           </div>
           <div class="city">
-            <div><img src="/assets/images/cities_icon_7.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_7.png" />
+            </div>
             <div>
               <p>Lucknow</p>
             </div>
           </div>
 
           <div class="city">
-            <div><img src="/assets/images/cities_icon_8.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_8.png" />
+            </div>
             <div>
               <p>Jaipur</p>
             </div>
           </div>
           <div class="city">
-            <div><img src="/assets/images/cities_icon_9.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_9.png" />
+            </div>
             <div>
               <p>Hyderabad</p>
             </div>
           </div>
           <div class="city">
-            <div><img src="/assets/images/cities_icon_10.png" /></div>
+            <div tabindex="0">
+              <img src="/assets/images/cities_icon_10.png" />
+            </div>
             <div>
               <p>Ahmedabad</p>
             </div>
@@ -135,219 +163,14 @@
         </div>
       </div>
 
-      <div class="toggle-city-show text-light">Show All Cities</div>
+      <a class="toggle-city-show text-light">Show All Cities</a>
 
       <div class="other-city-container">
         <div>
           <p class="text-light">Other Cities</p>
         </div>
-        <div class="other-city-container-parent">
-          <div>
-            <p>New York</p>
-          </div>
-          <div>
-            <p>Los Angeles</p>
-          </div>
-          <div>
-            <p>Chicago</p>
-          </div>
-          <div>
-            <p>Houston</p>
-          </div>
-          <div>
-            <p>Phoenix</p>
-          </div>
-          <div>
-            <p>Philadelphia</p>
-          </div>
-          <div>
-            <p>San Antonio</p>
-          </div>
-          <div>
-            <p>San Diego</p>
-          </div>
-          <div>
-            <p>Dallas</p>
-          </div>
-          <div>
-            <p>San Jose</p>
-          </div>
-          <div>
-            <p>London</p>
-          </div>
-          <div>
-            <p>Paris</p>
-          </div>
-          <div>
-            <p>Berlin</p>
-          </div>
-          <div>
-            <p>Madrid</p>
-          </div>
-          <div>
-            <p>Rome</p>
-          </div>
-          <div>
-            <p>Amsterdam</p>
-          </div>
-          <div>
-            <p>Brussels</p>
-          </div>
-          <div>
-            <p>Vienna</p>
-          </div>
-          <div>
-            <p>Prague</p>
-          </div>
-          <div>
-            <p>Budapest</p>
-          </div>
-          <div>
-            <p>Tokyo</p>
-          </div>
-          <div>
-            <p>Osaka</p>
-          </div>
-          <div>
-            <p>Kyoto</p>
-          </div>
-          <div>
-            <p>Seoul</p>
-          </div>
-          <div>
-            <p>Beijing</p>
-          </div>
-          <div>
-            <p>Shanghai</p>
-          </div>
-          <div>
-            <p>Hong Kong</p>
-          </div>
-          <div>
-            <p>Singapore</p>
-          </div>
-          <div>
-            <p>Bangkok</p>
-          </div>
-          <div>
-            <p>Kuala Lumpur</p>
-          </div>
-          <div>
-            <p>Sydney</p>
-          </div>
-          <div>
-            <p>Melbourne</p>
-          </div>
-          <div>
-            <p>Brisbane</p>
-          </div>
-          <div>
-            <p>Auckland</p>
-          </div>
-          <div>
-            <p>Wellington</p>
-          </div>
-          <div>
-            <p>Toronto</p>
-          </div>
-          <div>
-            <p>Vancouver</p>
-          </div>
-          <div>
-            <p>Montreal</p>
-          </div>
-          <div>
-            <p>Calgary</p>
-          </div>
-          <div>
-            <p>Ottawa</p>
-          </div>
-          <div>
-            <p>Mexico City</p>
-          </div>
-          <div>
-            <p>Guadalajara</p>
-          </div>
-          <div>
-            <p>Monterrey</p>
-          </div>
-          <div>
-            <p>Cancun</p>
-          </div>
-          <div>
-            <p>Tijuana</p>
-          </div>
-          <div>
-            <p>Sao Paulo</p>
-          </div>
-          <div>
-            <p>Rio de Janeiro</p>
-          </div>
-          <div>
-            <p>Belo Horizonte</p>
-          </div>
-          <div>
-            <p>Brasilia</p>
-          </div>
-          <div>
-            <p>Salvador</p>
-          </div>
-          <div>
-            <p>Buenos Aires</p>
-          </div>
-          <div>
-            <p>Cordoba</p>
-          </div>
-          <div>
-            <p>Rosario</p>
-          </div>
-          <div>
-            <p>Mendoza</p>
-          </div>
-          <div>
-            <p>La Plata</p>
-          </div>
-          <div>
-            <p>Lima</p>
-          </div>
-          <div>
-            <p>Bogota</p>
-          </div>
-          <div>
-            <p>Medellin</p>
-          </div>
-          <div>
-            <p>Cali</p>
-          </div>
-          <div>
-            <p>Cartagena</p>
-          </div>
-          <div>
-            <p>Santiago</p>
-          </div>
-          <div>
-            <p>Valparaiso</p>
-          </div>
-          <div>
-            <p>Concepcion</p>
-          </div>
-          <div>
-            <p>Antofagasta</p>
-          </div>
-          <div>
-            <p>Temuco</p>
-          </div>
-          <div>
-            <p>Johannesburg</p>
-          </div>
-          <div>
-            <p>Cape Town</p>
-          </div>
-          <div>
-            <p>Durban</p>
-          </div>
-        </div>
-        <div class="toggle-city-hide text-light">Hide All Cities</div>
+        <div class="other-city-container-parent scroll-container"></div>
+        <a class="toggle-city-hide text-light">Hide All Cities</a>
       </div>
     </div>
     <div class="main-container">
