@@ -1,30 +1,29 @@
 $(document).ready(function () {
   $(".btn").click(function () {
-    $(".modal").fadeIn();
-    $(".modal").css("display", "flex");
-    $(".modal-backdrop").fadeIn();
+    $(".modal").addClass("modal-open").fadeIn();
+    $(".modal-backdrop").addClass("backdrop-open").fadeIn();
   });
   $(".toggle-city-show").click(function () {
-    $(this).css("display", "none");
-    $(".other-city-container").css("display", "flex");
-    $(".toggle-city-hide").css("display", "flex");
+    $(this).addClass("hide");
+    $(".other-city-container").removeClass("hide").addClass("show-flex");
+    $(".toggle-city-hide").removeClass("hide").addClass("show-flex");
   });
   $(".toggle-city-hide").click(function () {
-    $(this).css("display", "none");
-    $(".other-city-container").css("display", "none");
-    $(".toggle-city-show").css("display", "flex");
+    $(this).addClass("hide");
+    $(".other-city-container").removeClass("show-flex").addClass("hide");
+    $(".toggle-city-show").removeClass("hide").addClass("show-flex");
   });
   $(".close-icon-parent").click(function () {
-    $(".modal").css("display", "none");
-    $(".modal-backdrop").fadeOut();
+    $(".modal").removeClass("modal-open").fadeOut();
+    $(".modal-backdrop").removeClass("backdrop-open").fadeOut();
   });
   $(".caret-parent").click(function () {
-    $(".modal").css("display", "none");
-    $(".modal-backdrop").fadeOut();
+    $(".modal").removeClass("modal-open").fadeOut();
+    $(".modal-backdrop").removeClass("backdrop-open").fadeOut();
   });
   $(".modal-backdrop").click(function () {
-    $(".modal").fadeOut();
-    $(this).fadeOut();
+    $(".modal").removeClass("modal-open").fadeOut();
+    $(this).removeClass("backdrop-open").fadeOut();
   });
   const cities = [
     "Adilabad",

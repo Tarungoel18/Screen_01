@@ -1,182 +1,177 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GiftStudio</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/a4eba448c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/assets/js/script.js"></script>
-  </head>
 
-  <body>
-    <div class="modal-backdrop"></div>
-    <div class="modal">
-      <!-- Title -->
-      <div class="title">
-        <a class="caret-parent">
-          <i class="fa-solid fa-angle-left close-caret"></i>
-        </a>
-        <h4>Pick a Delivery Location</h4>
-        <a class="close-icon-parent">
-          <i class="fa-solid fa-xmark close-icon text-light"></i>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GiftStudio</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script src="https://kit.fontawesome.com/a4eba448c7.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+</head>
+
+<body>
+  <div class="modal-backdrop"></div>
+  <div class="modal">
+    <!-- Title -->
+    <div class="title">
+      <a href="#" class="caret-parent">
+        <i class="fa-solid fa-angle-left close-caret"></i>
+      </a>
+      <h4>Pick a Delivery Location</h4>
+      <a href="#" class="close-icon-parent">
+        <i class="fa-solid fa-xmark close-icon text-light"></i>
+      </a>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <div class="search-icon">
+        <img src="/assets/images/search-icon.png" />
       </div>
-
-      <!-- Search Box -->
-      <div class="search-box">
-        <div class="search-icon">
-          <img src="/assets/images/search-icon.png" />
-        </div>
-        <div class="input-box">
-          <input
-            type="text"
-            class="city-search"
-            placeholder="Search for delivery location"
-          />
-          <div class="city-suggestions"></div>
-        </div>
-      </div>
-
-      <!--Notion Container-->
-      <div class="notion-container">
-        <div class="notion-box">
-          <div class="notion-image">
-            <img src="/assets/images/notation-1.png" />
-          </div>
-          <div class="notion-title">
-            <p>FOR EVERY OCCASION</p>
-          </div>
-        </div>
-        <div class="notion-box">
-          <div class="notion-image">
-            <img src="/assets/images/notation-2.png" />
-          </div>
-          <div class="notion-title">
-            <p>CURATED WITH CARE</p>
-          </div>
-        </div>
-        <div class="notion-box">
-          <div class="notion-image">
-            <img src="/assets/images/notation-3.png" />
-          </div>
-          <div class="notion-title">
-            <p>PACKAGE WITH LOVE</p>
-          </div>
-        </div>
-      </div>
-
-      <!--Top cities -->
-
-      <div class="city-container">
-        <div>
-          <p>Top Cities</p>
-        </div>
-        <div class="cities-wrapper">
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_1.png" />
-            </div>
-            <div>
-              <p>Mumbai</p>
-            </div>
-          </div>
-
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_2.png" />
-            </div>
-            <div>
-              <p>Delhi</p>
-            </div>
-          </div>
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_3.png" />
-            </div>
-            <div>
-              <p>Gurgaon</p>
-            </div>
-          </div>
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_4.png" />
-            </div>
-            <div>
-              <p>Bangalore</p>
-            </div>
-          </div>
-
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_5.png" />
-            </div>
-            <div>
-              <p>Kolkata</p>
-            </div>
-          </div>
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_6.png" />
-            </div>
-            <div>
-              <p>Pune</p>
-            </div>
-          </div>
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_7.png" />
-            </div>
-            <div>
-              <p>Lucknow</p>
-            </div>
-          </div>
-
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_8.png" />
-            </div>
-            <div>
-              <p>Jaipur</p>
-            </div>
-          </div>
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_9.png" />
-            </div>
-            <div>
-              <p>Hyderabad</p>
-            </div>
-          </div>
-          <div class="city">
-            <div tabindex="0">
-              <img src="/assets/images/cities_icon_10.png" />
-            </div>
-            <div>
-              <p>Ahmedabad</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <a class="toggle-city-show text-light">Show All Cities</a>
-
-      <div class="other-city-container">
-        <div>
-          <p class="text-light">Other Cities</p>
-        </div>
-        <div class="other-city-container-parent scroll-container"></div>
-        <a class="toggle-city-hide text-light">Hide All Cities</a>
+      <div class="input-box">
+        <input type="text" class="city-search" placeholder="Search for delivery location" />
+        <div class="city-suggestions"></div>
       </div>
     </div>
-    <div class="main-container">
+
+    <!--Notion Container-->
+    <div class="notion-container">
+      <div class="notion-box">
+        <div class="notion-image">
+          <img src="/assets/images/notation-1.png" />
+        </div>
+        <div class="notion-title">
+          <p>FOR EVERY OCCASION</p>
+        </div>
+      </div>
+      <div class="notion-box">
+        <div class="notion-image">
+          <img src="/assets/images/notation-2.png" />
+        </div>
+        <div class="notion-title">
+          <p>CURATED WITH CARE</p>
+        </div>
+      </div>
+      <div class="notion-box">
+        <div class="notion-image">
+          <img src="/assets/images/notation-3.png" />
+        </div>
+        <div class="notion-title">
+          <p>PACKAGE WITH LOVE</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Top cities -->
+
+    <div class="city-container">
       <div>
-        <button class="btn">Open Modal</button>
+        <p>Top Cities</p>
+      </div>
+      <div class="cities-wrapper">
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_1.png" />
+          </div>
+          <div>
+            <p>Mumbai</p>
+          </div>
+        </div>
+
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_2.png" />
+          </div>
+          <div>
+            <p>Delhi</p>
+          </div>
+        </div>
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_3.png" />
+          </div>
+          <div>
+            <p>Gurgaon</p>
+          </div>
+        </div>
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_4.png" />
+          </div>
+          <div>
+            <p>Bangalore</p>
+          </div>
+        </div>
+
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_5.png" />
+          </div>
+          <div>
+            <p>Kolkata</p>
+          </div>
+        </div>
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_6.png" />
+          </div>
+          <div>
+            <p>Pune</p>
+          </div>
+        </div>
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_7.png" />
+          </div>
+          <div>
+            <p>Lucknow</p>
+          </div>
+        </div>
+
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_8.png" />
+          </div>
+          <div>
+            <p>Jaipur</p>
+          </div>
+        </div>
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_9.png" />
+          </div>
+          <div>
+            <p>Hyderabad</p>
+          </div>
+        </div>
+        <div class="city">
+          <div tabindex="0">
+            <img src="/assets/images/cities_icon_10.png" />
+          </div>
+          <div>
+            <p>Ahmedabad</p>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+
+    <a href="#" class="toggle-city-show text-light">Show All Cities</a>
+
+    <div class="other-city-container">
+      <div>
+        <p class="text-light">Other Cities</p>
+      </div>
+      <div class="other-city-container-parent scroll-container"></div>
+      <a href="#" class="toggle-city-hide text-light">Hide All Cities</a>
+    </div>
+  </div>
+  <div class="main-container">
+    <div>
+      <button class="btn">Open Modal</button>
+    </div>
+  </div>
+</body>
+
 </html>
